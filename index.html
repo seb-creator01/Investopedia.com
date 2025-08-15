@@ -6,14 +6,21 @@
   <title>Investorpedia - Smart Crypto Investments</title>
   <style>
     body {
-<nav style="background: #1E3A8A; padding: 1rem;">
-  <a href="index.html" style="color: white; margin-right: 20px;">Home</a>
-  <a href="register.html" style="color: white; margin-right: 20px;">Register</a>
-  <a href="login.html" style="color: white; margin-right: 20px;">Login</a>
-  <a href="dashboard.html" style="color: white;">Dashboard</a>
-</nav>
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0; padding: 0; background: #f4f7f8; color: #333;
+    }
+    nav {
+      background: #1E3A8A; 
+      padding: 1rem;
+    }
+    nav a {
+      color: white; 
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       background: #1E3A8A;
@@ -46,14 +53,14 @@
     .plan {
       background: white;
       border-radius: 10px;
-      padding: 1.5rem;
+padding: 1.5rem;
       box-shadow: 0 0 15px rgb(30 58 138 / 0.15);
       flex: 1 1 250px;
       text-align: center;
     }
     .plan h2 {
       color: #1E3A8A;
-margin-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     .plan p {
       margin: 0.5rem 0;
@@ -87,6 +94,13 @@ margin-bottom: 0.5rem;
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+
   <header>
     <h1>Investorpedia</h1>
     <p>Smart Crypto Investments Made Easy</p>
@@ -98,13 +112,13 @@ margin-bottom: 0.5rem;
       <div class="plans">
         <div class="plan">
           <h2>Starter Plan</h2>
-          <p>Min: 50</p>
-          <p>ROI: 10
-          <p>Duration: 30 days</p>
+          <p>Min: $50</p>
+          <p>ROI: 10%</p>
+<p>Duration: 30 days</p>
         </div>
         <div class="plan">
           <h2>Silver Boost</h2>
-          <p>Min:200</p>
+          <p>Min:$200</p>
           <p>ROI: 35% monthly</p>
           <p>Duration: 30 days</p>
           <p>5% Referral Bonus</p>
@@ -112,7 +126,7 @@ margin-bottom: 0.5rem;
         <div class="plan">
           <h2>Gold Elite</h2>
           <p>Min: $500</p>
-<p>ROI: 60% after 40 days</p>
+          <p>ROI: 60% after 40 days</p>
           <p>Priority Withdrawals</p>
         </div>
       </div>
@@ -122,7 +136,7 @@ margin-bottom: 0.5rem;
       <h2>How to Invest</h2>
       <p>Send USDT (ERC20) to this wallet address:</p>
       <div class="wallet">0x1FA55C0b4f5b82252D6a566E753AA0e3FA196778</div>
-      <a href="#" class="button">Register Now</a>
+      <a href="register.html" class="button">Register Now</a>
     </section>
   </main>
 
@@ -131,4 +145,3 @@ margin-bottom: 0.5rem;
   </footer>
 </body>
 </html>
-
