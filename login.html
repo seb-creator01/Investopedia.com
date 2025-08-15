@@ -1,27 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login - Investorpedia</title>
-  <style>
-    body { font-family: sans-serif; background: #f4f7f8; padding: 2rem; }
-    .container { max-width: 400px; margin: auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-    h2 { text-align: center; color: #1E3A8A; }
-    input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-    button { background: #1E3A8A; color: white; padding: 10px; width: 100%; border: none; border-radius: 5px; font-weight: bold; }
-    a { text-decoration: none; color: #1E3A8A; display: block; text-align: center; margin-top: 1rem; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Investorpedia - Login</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .login-container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(30 58 138 / 0.15);
+    width: 320px;
+  }
+  h2 {
+    text-align: center;
+    color: #1E3A8A;
+    margin-bottom: 1.5rem;
+  }
+  label {
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+  }
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  button {
+    margin-top: 1.5rem;
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #1E3A8A;
+  }
+  .register-link {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: #2563eb;
+text-decoration: none;
+  }
+  .register-link:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
-  <div class="container">
-    <h2>User Login</h2>
-    <form action="/login" method="post">
-      <input type="email" name="email" placeholder="Email" required />
-<input type="password" name="password" placeholder="Password" required />
+  <div class="login-container">
+    <h2>Login to Investorpedia</h2>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+      
       <button type="submit">Login</button>
     </form>
-    <a href="register.html">Don't have an account? Register</a>
+    <a href="#" class="register-link">Don't have an account? Register</a>
   </div>
 </body>
-  </html>
+</html>
