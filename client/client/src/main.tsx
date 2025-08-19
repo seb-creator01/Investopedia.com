@@ -1,18 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App from "./App";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Welcome to Investorpedia</h1>
-      <p>This is your React app running!</p>
-    </div>
-  );
-};
-
-const root = document.getElementById("root");
-
-if (root) {
-  const reactRoot = ReactDOM.createRoot(root);
-  reactRoot.render(<App />);
-}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
